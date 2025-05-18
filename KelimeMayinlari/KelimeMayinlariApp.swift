@@ -1,17 +1,18 @@
-//
-//  KelimeMayinlariApp.swift
-//  KelimeMayinlari
-//
-//  Created by ASUDE on 20.04.2025.
-//
-
 import SwiftUI
+import FirebaseCore
 
 @main
 struct KelimeMayinlariApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
+           
         }
+        
     }
+    
 }

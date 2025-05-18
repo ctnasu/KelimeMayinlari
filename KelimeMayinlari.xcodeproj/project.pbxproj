@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B54A47E2DB5920F00BF0AEF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1B54A47D2DB5920F00BF0AEF /* FirebaseAuth */; };
+		1B54A4802DB5920F00BF0AEF /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 1B54A47F2DB5920F00BF0AEF /* FirebaseCore */; settings = {ATTRIBUTES = (Required, ); }; };
+		1B72B39F2DB990760047452B /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 1B72B39E2DB990760047452B /* FirebaseFirestoreCombine-Community */; };
+		1B72B3A12DB990930047452B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1B72B3A02DB990930047452B /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1B54A45A2DB5892500BF0AEF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +36,30 @@
 		1B54A4632DB5892500BF0AEF /* KelimeMayinlariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KelimeMayinlariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1B54A5302DB9454700BF0AEF /* Exceptions for "KelimeMayinlari" folder in "KelimeMayinlariTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 1B54A4582DB5892500BF0AEF /* KelimeMayinlariTests */;
+		};
+		1B54A5312DB9454700BF0AEF /* Exceptions for "KelimeMayinlari" folder in "KelimeMayinlariUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"GoogleService-Info.plist",
+			);
+			target = 1B54A4622DB5892500BF0AEF /* KelimeMayinlariUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1B54A44E2DB5892300BF0AEF /* KelimeMayinlari */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1B54A5302DB9454700BF0AEF /* Exceptions for "KelimeMayinlari" folder in "KelimeMayinlariTests" target */,
+				1B54A5312DB9454700BF0AEF /* Exceptions for "KelimeMayinlari" folder in "KelimeMayinlariUITests" target */,
+			);
 			path = KelimeMayinlari;
 			sourceTree = "<group>";
 		};
@@ -52,6 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B72B39F2DB990760047452B /* FirebaseFirestoreCombine-Community in Frameworks */,
+				1B72B3A12DB990930047452B /* FirebaseFirestore in Frameworks */,
+				1B54A4802DB5920F00BF0AEF /* FirebaseCore in Frameworks */,
+				1B54A47E2DB5920F00BF0AEF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +144,10 @@
 			);
 			name = KelimeMayinlari;
 			packageProductDependencies = (
+				1B54A47D2DB5920F00BF0AEF /* FirebaseAuth */,
+				1B54A47F2DB5920F00BF0AEF /* FirebaseCore */,
+				1B72B39E2DB990760047452B /* FirebaseFirestoreCombine-Community */,
+				1B72B3A02DB990930047452B /* FirebaseFirestore */,
 			);
 			productName = KelimeMayinlari;
 			productReference = 1B54A44C2DB5892300BF0AEF /* KelimeMayinlari.app */;
@@ -195,6 +231,9 @@
 			);
 			mainGroup = 1B54A4432DB5892200BF0AEF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1B54A44D2DB5892300BF0AEF /* Products */;
 			projectDirPath = "";
@@ -550,6 +589,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B54A47D2DB5920F00BF0AEF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1B54A47F2DB5920F00BF0AEF /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		1B72B39E2DB990760047452B /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		1B72B3A02DB990930047452B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B54A47C2DB5920F00BF0AEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B54A4442DB5892300BF0AEF /* Project object */;
 }
